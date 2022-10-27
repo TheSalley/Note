@@ -16,7 +16,14 @@ module.exports = {
                     { text: 'Item C', link: '/item-3' }
                 ]
             },
-            { text: 'Webpack', link: '/webpack/index' },
+            {
+                text: '进阶',
+                items: [
+                    { text: 'Webpack', link: '../webpack/index' },
+                    { text: 'VueRouter', link: '/vue/VueRouter' },
+                    { text: 'Item C', link: '/item-3' }
+                ]
+            },
             { text: 'Http', link: '/http/index' },
             { text: '面试', link: '/interview/index' },
             { text: 'rn', link: '/react-native/index' },

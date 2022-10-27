@@ -69,3 +69,23 @@
     <import src="./xxx.wxml"></import>
     <template is="test" data="{{mydata}}">
 ```
+
+## 5、常用api
+
++ `wx.setTabBarBadge` 设置tabbar 右上角文本
+
++ `wx.removeTabBarBadge` 移除tabbar 右上角文本
+
+```javascript
+    // 父
+    <view slot="test"></view>
+
+    // 子
+    <slot name="test"></slot>
+
+    多插槽需配置
+
+    observers 监听器
+
+    //    1.触发事件 2. 直接调用引用该 WXS 的页面或者组件的方法。
+    ownerInstance.callMethod('handleTouchMove', { direction: direction })

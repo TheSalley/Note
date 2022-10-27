@@ -120,3 +120,13 @@
 + 理解：
 
     Vue 修改`data` 并不会立即触发DOM 更新，而是把需要更新的`watcher` 加入到队列中，然后在合适的时机在`nextTick`中调用这些`watcher` 的更新函数进行DOM 更新。所以在`data` 刚被修改的时候，用户是获取不到更新后的DOM 的，这时候便需要调用`nextTick` 函数获取更新后的DOM。
+
+## 9、Vue2响应式原理
+
+1. Vue2 的响应式原理是根据`Object.defineProperty` 这个api 来对数据进行**劫持**并结合**发布者-订阅者**模式实现的。
+
+2. 首先会使用`Object.defineProperty` 的`get` 函数来对Vue 中的`data` 中的所有属性进行访问劫持，中间会涉及到`data` 中更深层次的属性需要递归调用劫持方法。这里是通过一个`Observer` 类实现的。
+
+3. 劫持到每一个属性后会给这个属性绑定多个订阅者`watcher`，因为一个属性可能被用在很多地方；而这个`watcher` 中则包含更新视图的函数`update`。
+
+4. 
