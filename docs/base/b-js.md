@@ -75,5 +75,44 @@
 3. ES6的`Array.isArray()`
 
 ```javascript
-    
+    Array.isArray(obj);
 ```
+
+4. instanceof
+
+```javascript
+    obj instanceof Array
+```
+
+5. Array.prototype.isPrototypeOf
+
+```javascript
+    Array.prototype.isPrototypeOf(obj)
+```
+
+## 4、null 和 undefined 的区别？
+
+首先，`Null` 和`Undefined` 都是基本数据类型，它们的值是它们本身。
+
+`undefined` 代表的含义是**未定义**，`null` 代表的含义是**空对象**。一般变量只声明但未赋值时，系统会自动分配此变量一个`undefined`值，而`null` 主要用于赋值给一个返回值是对象的变量，用于初始化。
+
+## 6、instanceof 操作符的原理及实现
+
+```javascript
+    function myInstanceof(left, right) {
+        // 获取对象的原型
+        let proto = Object.getPrototypeOf(left)
+        // 获取构造函数的 prototype 对象
+        let prototype = right.prototype; 
+        
+        // 判断构造函数的 prototype 对象是否在对象的原型链上
+        while (true) {
+            if (!proto) return false;
+            if (proto === prototype) return true;
+            // 如果没有找到，就继续从其原型上找，Object.getPrototypeOf方法用来获取指定对象的原型
+            proto = Object.getPrototypeOf(proto);
+  }
+}
+```
+
+## 7、
