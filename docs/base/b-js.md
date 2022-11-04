@@ -115,7 +115,7 @@
 }
 ```
 
-## 7、Object.assign 和 扩展运算符是深拷贝还是浅拷贝？两者区别？
+## 7、Object.assign 和 扩展运算符是深拷贝还是浅拷贝？
 
 + 扩展运算符
 
@@ -129,3 +129,18 @@
 
     console.log(outObj) // { inObj: { a: 2, b: 2 } }
 ```
+
++ Object.assign()
+
+```javascript
+    let outObj = {
+        inObj: { a: 1, b: 2 }
+    }
+
+    let newObj = Object.assign({}, outObj)
+    newObj.inObj.a = 2
+
+    console.log(outObj) // { inObj: { a: 2, b: 2 } }
+```
+
+可以看到，两者都是**浅拷贝**。
