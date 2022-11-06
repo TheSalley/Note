@@ -6,8 +6,14 @@ module.exports = {
             {
                 text: '基础', link: '../base/b-html'
             },
-            { text: 'JavaScript', link: '../js/index' },
-            { text: 'TypeScript', link: '../ts/index' },
+            {
+                text: '进阶',
+                items: [
+                    { text: 'JavaScript', link: '../js/index' },
+                    { text: 'TypeScript', link: '../ts/index' },
+                    { text: 'Item C', link: '/item-3' }
+                ]
+            },
             { text: '微信小程序', link: '../weixin/index' },
             {
                 text: 'Vue',
@@ -19,29 +25,16 @@ module.exports = {
                 ]
             },
             {
-                text: '进阶',
+                text: 'NodeJs',
                 items: [
-                    { text: 'Webpack', link: '../webpack/index' },
-                    { text: 'VueRouter', link: '/vue/VueRouter' },
-                    { text: 'Item C', link: '/item-3' }
+                    { text: 'Node', link: '../node/index' },
+                    { text: 'Koa', link: '/vue/VueRouter' },
+                    { text: 'Nest', link: '../vue/3-ts.md' },
                 ]
             },
-            { text: 'Http', link: '/http/index' },
-            { text: '面试', link: '/interview/index' },
-            { text: 'rn', link: '/react-native/index' },
+            { text: '跨端跨平台', link: '/react-native/index' },
         ],
         sidebar: {
-            '/js/': [
-                {
-                    text: '目录',
-                    items: [
-                        // This shows `/guide/index.md` page.
-                        { text: '基础', link: '/js/' }, // /guide/index.md
-                        { text: '进阶', link: '/js/advance' }, // /guide/one.md
-                    ]
-                },
-
-            ],
             '/base/': [
                 {
                     text: '目录',
