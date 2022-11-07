@@ -1,7 +1,9 @@
 module.exports = {
     title: 'Learn Note',
+    lang: 'en-US',
     description: 'Now',
-    base: '/docs/.vitepress/dist/',
+    outDir: '../build',
+    base: '/build/',
     themeConfig: {
         nav: [
             {
