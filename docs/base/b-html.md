@@ -66,10 +66,27 @@
 
 表示对超文本的引用。
 
-它指向一些网络资源。44
+它指向一些网络资源。
 
 当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。常会用在`a`、`link`等 标签上。
 
 ## 4、`script` 标签中`defer` 和`async` 的区别
 
-[bar - three](../)
+`defer` 和`async` 属性都是去异步加载外部的JS 脚本文件，它们都不会阻塞页面的解析。
+
++ 执行顺序
+
+多个带`async` 属性的标签，不能保证加载的顺序。而多个带`defer` 属性的标签，按照加载顺序执行。
+
+![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e4bb7a9e77f45a1a9d387a66c3ecbd8~tplv-k3u1fbpfcp-watermark.image?)
+
+## 5、常用的`meta` 标签
+
+`meta` 标签由`name` 和 `content` 属性定义，用来描述网页文档的属性。
+
+```html
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" />
+```

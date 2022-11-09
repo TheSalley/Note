@@ -121,12 +121,28 @@
 
     Vue 修改`data` 并不会立即触发DOM 更新，而是把需要更新的`watcher` 加入到队列中，然后在合适的时机在`nextTick`中调用这些`watcher` 的更新函数进行DOM 更新。所以在`data` 刚被修改的时候，用户是获取不到更新后的DOM 的，这时候便需要调用`nextTick` 函数获取更新后的DOM。
 
-## 9、Vue2响应式原理
+## 9、Vue 原理
 
-1. Vue2 的响应式原理是根据`Object.defineProperty` 这个api 来对数据进行**劫持**并结合**发布者-订阅者**模式实现的。
+当一个Vue 实例被创建时，Vue 会遍历`data` 中的属性，用`Object.defineProperty`(Vue3 采用 `Proxy`)将它们转为`getter/setter`，并且在内部追踪相关依赖，在属性被访问和修改时通知变化。
 
-2. 首先会使用`Object.defineProperty` 的`get` 函数来对Vue 中的`data` 中的所有属性进行访问劫持，中间会涉及到`data` 中更深层次的属性需要递归调用劫持方法。这里是通过一个`Observer` 类实现的。
+每个组件实例都有相应的`Watcher`，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的`setter` 被调用时，会通知`Watcher` 重新计算，从而导致使它关联的组件的已更新。
 
-3. 劫持到每一个属性后会给这个属性绑定多个订阅者`watcher`，因为一个属性可能被用在很多地方；而这个`watcher` 中则包含更新视图的函数`update`。
+![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10631e82411948759e96d3c408409a89~tplv-k3u1fbpfcp-watermark.image?)
 
-4. 
+::: tip Vue 双向绑定数据原理
+采用**数据劫持** 结合**发布-订阅**模式，通过`Object.defineProperty` 来劫持各个属性的`getter/setter`，在数组变动时发布消息给订阅者，触发相应的监听回调。
+:::
+
+1. 对需要`observe` 的数据对象递归遍历，包括子对象的属性，都加上`getter/setter` 。
+
+2. `compile` 解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并给每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一但数据变更，收到通知，更新视图。
+
+3. `Watcher` 订阅者是`Observer` 和 `Compile` 之间的桥梁。它主要做：
+
++ 在自身实例化时往属性订阅器(`Dep`)中添加自己
+
++ 自身有一个`update` 方法
+
++ 属性变更时，`Dep.notice` 通知并调自身的`update`，触发`Compile`中绑定的回调
+
+![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32c3c03d10b2469aab200a188d5d3153~tplv-k3u1fbpfcp-watermark.image?)
