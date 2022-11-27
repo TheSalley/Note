@@ -28,11 +28,15 @@ module.exports = {
         ],
       },
       {
+        text: "React",
+        items: [{ text: "React 基础", link: "../react/index" }],
+      },
+      {
         text: "NodeJs",
         items: [
           { text: "Node", link: "../node/index" },
           { text: "Koa", link: "/vue/VueRouter" },
-          { text: "Nest", link: "../vue/3-ts.md" },
+          { text: "Nest", link: "../nest/index" },
         ],
       },
       { text: "跨端跨平台", link: "/react-native/index" },

@@ -1,5 +1,6 @@
 # JavaScript
 
+[]()
 ## 1、JavaScript 中的数据类型
 
 值类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
