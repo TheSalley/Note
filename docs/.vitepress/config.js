@@ -53,6 +53,7 @@ module.exports = {
             { text: "性能优化", link: "../base/b-performance" },
             { text: "浏览器", link: "../base/b-browser" },
             { text: "Git", link: "../base/b-git" },
+            { text: "正则", link: "../base/b-reg" },
           ],
         },
       ],
