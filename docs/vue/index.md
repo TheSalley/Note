@@ -15,7 +15,7 @@
 
 > 流程图
 
-![](../imgs/vue/lifecycle.png)
+![]()
 
 ## 2、语法
 

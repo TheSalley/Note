@@ -44,7 +44,7 @@
 
 ## 🐬 SQL
 
-1. [sql 语句]()
+1. [sql 语句](./database/sql.md)
 
 ## 🐋 Docker
 
