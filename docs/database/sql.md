@@ -93,3 +93,11 @@ UPDATE tb_student SET stu_addr='终南山' WHERE stu_name='杨过';
 ```sql
 DELETE FROM tb_student WHERE stu_name='林震南';
 ```
+
+## 7、join 
+
+```sql
+SELECT s.stu_name, tb_teacher.tea_title ,tb_teacher.tea_name 
+FROM tb_student AS s 
+INNER JOIN tb_teacher ON s.col_id = tb_teacher.col_id;
+```
