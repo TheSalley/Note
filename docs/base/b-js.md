@@ -1,18 +1,11 @@
 # JavaScript
 
-[发展史和简单介绍](./b-js_history.md)
+1. [发展史和简单介绍](./b-js_history.md)
+2. [数据类型](./b-js_dataType.md)
 
 ## 1、JavaScript 中的数据类型
 
-值类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
 
-引用类型：`Object`（包含`Function`、`Array`）
-
-其中`Symbol` 和 `BigInt` 是 ES6 中新增的数据类型：
-
-- `Symbol` 代表<b style="color: #FFCC99;">独一无二且不可变</b>的数据类型，它主要是为了解决可能出现的全局变量冲突的问题。
-
-- `BigInt` 是数字类型的数据类型，它可以表示任意精度格式的数字。
 
 ## 2、检测数据类型的方法
 
