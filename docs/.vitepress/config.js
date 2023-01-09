@@ -40,6 +40,14 @@ module.exports = {
       },
       { text: "测试", link: "../database/mysql" },
       { text: "跨端跨平台", link: "/react-native/index" },
+      {
+        text: "Python",
+        items: [
+          {text: "Python基础", link: "../python/py_base.md"},
+          {text: "Flask", link: "../flask/index"},
+          {text: "Django", link: "../django/index"},
+        ]
+      }
     ],
     sidebar: {
       "/base/": [
