@@ -6,18 +6,17 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: "基础",
+        text: "前端基础",
         link: "../base/b-html",
       },
       {
-        text: "进阶",
+        text: "前端进阶",
         items: [
           { text: "JavaScript", link: "../advance/index" },
           { text: "TypeScript", link: "../ts/index" },
           { text: "杂谈", link: "../advance/advance" },
         ],
       },
-      { text: "微信小程序", link: "../weixin/index" },
       {
         text: "Vue",
         items: [

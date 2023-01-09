@@ -2,9 +2,8 @@
 
 1. [发展史和简单介绍](./b-js_history.md)
 2. [数据类型](./b-js_dataType.md)
-
-## 1、JavaScript 中的数据类型
-
+3. [数据类型的转换](./b-js_dataType_transition.md)
+4. [类](./b-js_class.md)
 
 
 ## 2、检测数据类型的方法
