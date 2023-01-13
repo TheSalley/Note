@@ -3,6 +3,7 @@ module.exports = {
   lang: "en-US",
   description: "Now",
   outDir: "../build",
+  base: '/note',
   themeConfig: {
     nav: [
       {
