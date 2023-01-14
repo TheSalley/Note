@@ -9,14 +9,15 @@
 
 ## 2、本地
 
-| 指令             | 含义         |
-| ---------------- | ------------ |
-| git init         | 初始化       |
-| git status       | 查看当前状态 |
-| git add          | 添加到暂存区 |
-| git commit       | 提交         |
-| git log          | 日志         |
-| touch .gitignore | 忽略         |
+| 指令              | 含义              |
+| ----------------- | ----------------- |
+| git init          | 初始化            |
+| git status        | 查看当前状态      |
+| git add           | 添加到暂存区      |
+| git commit        | 提交              |
+| git log           | 日志              |
+| touch .gitignore  | 忽略              |
+| git config --list | 查看本地 git 配置 |
 
 ## 3、分支
 
@@ -32,14 +33,14 @@
 
 ## 4、远程
 
-| 指令          | 含义     |
-| ------------- | -------- |
-| git clone     | 克隆     |
-| git remote -v | 查看远程 |
-| git push      | 提交远程 |
-| git fetch     | 拉取远程 |
-| git diff      | 查看不同 |
-| git pull      |          |
+| 指令                   | 含义                     |
+| ---------------------- | ------------------------ |
+| git clone              | 克隆                     |
+| git remote -v          | 查看远程                 |
+| git push               | 提交远程                 |
+| git fetch              | 拉取远程                 |
+| git diff               | 查看不同                 |
+| git pull origin `main` | 将远程 mian 分支拉到本地 |
 
 ## 5、暂存区
 
