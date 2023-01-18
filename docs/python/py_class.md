@@ -1,5 +1,7 @@
 # 类
 
+[[toc]]
+
 ## 1、简介
 
 ## 2、创建和使用类
@@ -86,7 +88,7 @@ my_new_car.odometer_reading = 23
     my_new_car.update_odometer(100)
 ```
 
-# 3、继承
+## 3、继承
 
 一个类继承另一个类，将自动获得另一个类的所有属性和方法，同时也可以定义自己独有的属性和方法。
 
@@ -109,9 +111,9 @@ print(my_tesla.get_descriptive_name())  # 2020 Tesla Model3.
 my_tesla.describe_battert()  # This car has a 75-kmh battery.
 ```
 
-+ `super()`
+- `super()`
 
-是一个特殊的函数，它能让Python 调父类的方法。
+是一个特殊的函数，它能让 Python 调父类的方法。
 
 **重写父类的方法**：就是覆盖的意思。
 

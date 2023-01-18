@@ -11,3 +11,5 @@
 ## 5、[if 语句](./py_if.md)
 
 ## 9、[类](./py_class.md)
+
+## 10、[文件和异常](./py_file_exception.md)
