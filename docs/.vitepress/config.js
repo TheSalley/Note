@@ -58,6 +58,8 @@ module.exports = {
             { text: "HTML", link: "../base/b-html" },
             { text: "CSS", link: "../base/b-css" },
             { text: "JS", link: "../base/b-js" },
+            { text: "DOM", link: "../base/b-dom" },
+            { text: "BOM", link: "../base/b-bom" },
             { text: "HTTP", link: "../base/b-http" },
             { text: "性能优化", link: "../base/b-performance" },
             { text: "浏览器", link: "../base/b-browser" },
