@@ -6,4 +6,4 @@
 4. [对象](./b-js_object.md)
 5. [类](./b-js_class.md)
 6. [模块](./b-js_module.md)
-
+9. [Promise](./b-js_promise.md)

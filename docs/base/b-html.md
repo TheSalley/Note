@@ -1,6 +1,46 @@
 # HTML
 
-## 1、前端需要注意的SEO
+[[toc]]
+
+## 1、简介
+
+超文本标记语言（HyperText Markup Language, 简称：HTML）是一种用来结构化Web 网页及其内容的标记语言。
+
+:::tip
+HTML 不是编程语言
+:::
+
+示例：
+![grumpy-cat-small.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/811c739fc07e432596562cedec266fd9~tplv-k3u1fbpfcp-watermark.image?)
+
+元素的构成有：
++ 开始标签
++ 结束标签
++ 内容
++ 元素
++ 属性
+
+### HTML 文档
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <img src="images/firefox-icon.png" alt="My test image">
+  </body>
+</html>
+```
+
++ `<!DOCTYPE html>` ：声明文档类型
++ `<html></html>` : 根元素
++ `<head></head>` : 该元素的内容对用户不可见，其中包含`meta`、`style` 等 
++ `<body></body>` : 用户访问页面时看到的内容
+
+## 2、前端需要注意的SEO
 
 + 合理的`title`、`description`、`keywords`
 
@@ -45,12 +85,12 @@
 
     网站速度是搜索引擎排序的一个重要指标。
 
-## 2、`<img>` 的`title` 和`alt` 的作用
+## 3、`<img>` 的`title` 和`alt` 的作用
 
 + `title` 鼠标悬浮在元素上显示
 + `alt` 是图片内容的等价描述，用于图片无法加载时显示。除了纯装饰性图片外都必须设置有意义的值，搜索引擎会重点分析。
 
-## 3、`src` 和`href` 的区别
+## 4、`src` 和`href` 的区别
 
 `src` 和 `href` 都是用来引用外部的资源。它们的区别如下：
 
@@ -70,7 +110,7 @@
 
 当浏览器识别到它指向的文件时，就会并行下载资源，不会停止对当前文档的处理。常会用在`a`、`link`等 标签上。
 
-## 4、`script` 标签中`defer` 和`async` 的区别
+## 5、`script` 标签中`defer` 和`async` 的区别
 
 `defer` 和`async` 属性都是去异步加载外部的JS 脚本文件，它们都不会阻塞页面的解析。
 
@@ -80,7 +120,7 @@
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e4bb7a9e77f45a1a9d387a66c3ecbd8~tplv-k3u1fbpfcp-watermark.image?)
 
-## 5、常用的`meta` 标签
+## 6、常用的`meta` 标签
 
 `meta` 标签由`name` 和 `content` 属性定义，用来描述网页文档的属性。
 
