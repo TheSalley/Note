@@ -1,5 +1,37 @@
 # VueRouter
 
+[[toc]]
+
+## 1、简介
+
+功能：
+
++ 嵌套路由映射
++ 动态路由选择
++ 模块化、基于组件的路由配置
++ 路由参数、查询、通配符
++ 过渡效果
++ 自动激活CSS 类的链接
++ HTML5 history 模式或hash 模式
++ 可定制的滚动行为
+
+## 2、简单使用
+
+```html
+<!-- 使用router-link 组件进行导航 -->
+<!-- 通过to 来指定地址 -->
+<router-link to="/">Go to Home</router-link>
+<router-link to="/about">Go to About</router-link>
+<!-- 路由出口，匹配到的组件将渲染到这里-->
+<router-view></router-view>
+```
+
+```javascript
+// 1. 定义路由组件
+const Home = { template: '<div>Home</div>' }
+const About = { template: '<div>About</div>' }
+```
+
 ## 1、为什么在Vue 实例注册 router 
 
 这样做会为Vue 实例注入`$route`、`$router`
