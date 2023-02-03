@@ -1,0 +1,93 @@
+# ES6 入门
+
+学习<<ECMAScript 6 入门教程>>
+
+[[toc]]
+
+## 1、let 和 const
+
+- `let`
+
+  用来声明变量，但是所声明的变量只能在`let` 命令所在的代码块有效。
+
+  `let` 不允许重复声明同一个变量。
+
+  不存在变量提升。
+
+  暂时性死区（temporal dead zone，简称 TDZ）：在声明变量之前，该变量都是不可用的。
+
+- `const`
+
+    用来声明一个只读的常量。一旦声明，常量的值是不能修改的（此值是内存地址所存的数据）。
+
+    只声明不赋值，会报错，必须在声明时就初始化值。
+
+    和`let` 一样，都是块级作用域、存在暂时性死区、不能重复声明。
+
+:::tip
+let 不允许在相同作用域内，重复声明同一个变量
+:::
+
+```javascript
+function func(arg) {
+  let arg;
+}
+func(); // 报错
+```
+
+:::tip
+暂时性死区导致`typeof` 不再是安全的操作
+:::
+
+```javascript
+typeof x; // 报错
+let x;
+
+typeof undeclared_variable; // "undefined"
+```
+
+暂时性死区示例：
+
+参数`x` 默认值等于另一个参数`y` ，而此时`y` 还没有声明，属于**死区**。
+
+```javascript
+function bar(x = y, y =2) {
+    ...
+}
+
+bar(); // 报错
+```
+
+暂时性死区的本质：只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。
+
+
+### 块级作用域
+
+块级作用域：
+    解决了内层变量会覆盖外层变量的问题；
+        用来计数的循环变量泄露为全局变量；
+
+
+## 2、解构赋值
+
+解构(Destructuring):
+
+```javascript
+let [a, b, c] = [1, 2, 3];
+let [x, y] = [1, 2, 3];
+
+let [foo, [[bar], baz]] = [1, [[2], 3]];
+console.log(foo); // 1
+console.log(bar); // 2
+console.log(baz); // 3
+
+let [, , third] = ["1", "2", "3"];
+console.log(third); // 3
+
+let [head, ...tail] = [1, 2, 3, 4];
+console.log(tail); // [2, 3, 4]
+
+let [x, y, ...z] = ["a"];
+console.log(y); // undefined
+console.log(z); // []
+```
