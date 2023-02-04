@@ -1,22 +1,16 @@
 # 数据类型
 
-值类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
++ 值类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
 
-引用类型：`Object`（包含`Function`、`Array`）
++ 引用类型：`Object`（包含`Function`、`Array`）
 
-其中`Symbol` 和 `BigInt` 是 ES6 中新增的数据类型：
-
-- `Symbol` 代表<b style="color: #FFCC99;">独一无二且不可变</b>的数据类型，它主要是为了解决可能出现的全局变量冲突的问题。
-
-- `BigInt` 是数字类型的数据类型，它可以表示任意精度格式的数字。
-
-### Number
+## Number
 
 number 类型代表整数和浮点数。除了常规的数字，还有`Infinity`、`-Infinity`、`NaN`。
 
 在JavaScript 中做数学运算是安全的。我们可以除以0，将非数字字符视为数字...
 
-### BigInt
+## BigInt
 
 ```javascript
 // 尾部的 "n" 表示这是一个 BigInt 类型

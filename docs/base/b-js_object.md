@@ -4,9 +4,9 @@
 
 ## 1、简介
 
-对象是用来存储**键值对**和更复杂的实体。
-它的键必须是字符串或`symbol`。
-值可以是任何类型。
+对象是使用**键值对**来存储一些复杂的实体。
+
+它的键必须是字符串或`symbol`，值可以是任何类型。
 
 创建对象：
 
@@ -17,7 +17,7 @@ let user = new Object();
 let user = {};
 ```
 
-对象的增加、读取、删除操作：
+对象属性的增加、读取、删除操作：
 
 ```javascript
 let user = {};
@@ -41,7 +41,7 @@ delete user.name;
 let fruit = "apple";
 
 let bag = {
-  [fruit]: 5,
+  [fruit + "_num"]: 5,
 };
 ```
 
@@ -51,7 +51,7 @@ let bag = {
 function makeUser(name, age) {
   return {
     name, // 与 name：name 相同
-    age, // 与age: age 相同
+    age: 30,
   };
 }
 ```
@@ -59,10 +59,10 @@ function makeUser(name, age) {
 ## 4、属性名称限制
 
 - 属性名不能是某个保留字
-- 非字符串和`symbol`类型的会被自动转换为字符串
+- 非字符串类型和`symbol` 类型的会被自动转换为字符串
 - 对象的`__proto__` 属性不能设置一个非对象的值，因为会被忽略掉
 
-## 5、属性存在性测试，in 操作符
+## 5、in 操作符, 判断属性是否存在
 
 `JavaScript` 的对象的特性：能够被访问任何属性。即使属性不存在也不会报错！
 
@@ -70,6 +70,7 @@ function makeUser(name, age) {
 let user = { name: "alan", age: 30 };
 
 console.log("age" in user); // true
+console.log("height" in user); // false
 ```
 
 ## 5、for...in 循环
@@ -106,7 +107,48 @@ for (let key in user) {
 
 对象是通过**引用**（在内存中的地址）存储和复制的，而原始类型总是作为一个整体复制。
 
-> 复制 `Object.assign`
+通过引用来判断两个对象是否相等:
+
+```javascript
+let a = {};
+let b = a;
+
+console.log(a == b); // true，都引用同一对象
+console.log(a === b); // true
+
+console.log({} == {}); // false
+```
+
+<hr/>
+
+拷贝对象的操作：
+
+- 递归深拷贝：
+
+```javascript
+let user = {
+  name: "John",
+  age: 30,
+  sizes: {
+    height: 100,
+    width: 50,
+  },
+};
+
+function deepClone(obj) {
+  if (typeof obj !== "object") {
+    return obj;
+  }
+  // 定义一个新的空对象
+  let newObj = {};
+  for (let key in obj) {
+    newObj[key] = deepClone(obj[key]);
+  }
+  return newObj;
+}
+```
+
+- `Object.assign()` 可以将多个对象合并到一个对象中:
 
 ```javascript
 let user = { name: "alan" };
@@ -114,8 +156,29 @@ let permission1 = { canView: true };
 let permission2 = { canEdit: true };
 // 将permission1 和permission2 中的所有属性都拷贝到user 中
 Object.assign(user, permissions1, permissions2);
-// user = { name: "John", canView: true, canEdit: true }
+// user = { name: "alan", canView: true, canEdit: true }
 ```
+
 ::: warning
- `Object.assign` 是浅拷贝
+`Object.assign` 是浅拷贝
 :::
+
+## 8、对象方法中的 this
+
+`this` 指向当前对象
+
+```javascript
+let user = {
+  name: "alan",
+  age: 30,
+  sayHi() {
+    // sayHi(){...} 等同于sayHi: function(){...}
+    console.log(this.name);
+  },
+};
+
+user.sayHi(); // alan
+```
+## 9、可选链操作符 ?.
+
+可选链操作符`?.` 是一种访问嵌套对象属性的安全方式。即使不存在，也不会报错。
