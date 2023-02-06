@@ -182,3 +182,11 @@ user.sayHi(); // alan
 ## 9、可选链操作符 ?.
 
 可选链操作符`?.` 是一种访问嵌套对象属性的安全方式。即使不存在，也不会报错。
+
+如果可选链`?.` 前面的值是`undefined` 或`null`，它会停止运算并返回`undefined`。
+
+`value?.prop`:
++ 若`value` 存在，则表达式的结果与`value.prop` 相同
++ 否则(当`value` 为`undefined` /`null`)，则返回`undefined`
+
+变体：`obj.method?()`、`obj?.[prop]`
