@@ -48,7 +48,6 @@ module.exports = {
           { text: "Nest", link: "/nest/index" },
         ],
       },
-      { text: "测试", link: "../database/mysql" },
       { text: "跨端跨平台", link: "/react-native/index" },
       {
         text: "Python",
@@ -115,6 +114,8 @@ module.exports = {
             { text: "2. let 和const", link: "/advance/es6/2" },
             { text: "3. 解构赋值", link: "/advance/es6/3" },
             { text: "14. Set 和Map 数据结构", link: "/advance/es6/14" },
+            { text: "15. Proxy", link: "/advance/es6/15" },
+            { text: "16. Reflect", link: "/advance/es6/16" },
           ],
         },
       ],
