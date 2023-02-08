@@ -48,7 +48,6 @@ module.exports = {
           { text: "Nest", link: "/nest/index" },
         ],
       },
-      { text: "测试", link: "../database/mysql" },
       { text: "跨端跨平台", link: "/react-native/index" },
       {
         text: "Python",
