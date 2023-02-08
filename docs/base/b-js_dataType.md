@@ -6,11 +6,13 @@
 
 ## Number
 
-number 类型代表整数和浮点数。除了常规的数字，还有`Infinity`、`-Infinity`、`NaN`。
+`Number` 类型代表整数和浮点数。除了常规的数字，还有`Infinity`、`-Infinity`、`NaN`。
 
-在JavaScript 中做数学运算是安全的。我们可以除以0，将非数字字符视为数字...
+在`JavaScript` 中做数学运算是安全的。我们可以除以0，将非数字字符视为数字...
 
 ## BigInt
+
+`BigInt` 用来表示任意长度的整数。
 
 ```javascript
 // 尾部的 "n" 表示这是一个 BigInt 类型
@@ -19,11 +21,15 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
 ## String
 
-支持单引号、双引号、反引号包裹。
+使用单引号、双引号、反引号包裹。
+
+```javascript
+'' "" ``
+```
 
 ## Boolean
 
-boolean 类型仅包含两个值：`true` 和`false`
+`Boolean` 类型仅包含两个值：`true` 和`false`
 
 ## null
 
@@ -31,7 +37,7 @@ boolean 类型仅包含两个值：`true` 和`false`
 
 ## undefined
 
-undefined 的含义是未被赋值。
+`undefined` 的含义是未被赋值。
 
 如果一个变量已被声明，但未被赋值，那么它的值就是undefined。
 
@@ -48,7 +54,7 @@ let id2 = Symbol("id");
 console.log(id1 == id2); // false
 ```
 
-`symbol` 不会被自动转换为字符串。
+`symbol` 作为对象的键时不会被自动转换为字符串。
 
 所有`symbol` 都具有`description` 属性。
 
@@ -86,4 +92,28 @@ let sym2 = Symbol.for("id");
 // 通过 symbol 获取 name
 console.log( Symbol.keyFor(sym) ); // name
 console.log( Symbol.keyFor(sym2) ); // id
+```
+
+## typeof 运算符
+
+`typeof` 运算符返回参数的类型。
+
+```javascript
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"
+
+typeof null // "object"
+
+typeof alert // "function"
 ```

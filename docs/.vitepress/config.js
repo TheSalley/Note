@@ -48,7 +48,9 @@ module.exports = {
           { text: "Nest", link: "/nest/index" },
         ],
       },
-      { text: "跨端跨平台", link: "/react-native/index" },
+      { text: "跨端跨平台", items: [
+        {text: "uniapp", link: "/uniapp/index"}
+      ] },
       {
         text: "Python",
         items: [
@@ -72,6 +74,7 @@ module.exports = {
             { text: "JS - 函数进阶", link: "/base/b-js_fun_advance" },
             { text: "JS - 原型、继承", link: "/base/b-js_proto" },
             { text: "JS - 类", link: "/base/b-js_class" },
+            { text: "JS - Promise", link: "/base/b-js_promise" },
             { text: "DOM", link: "/base/b-dom" },
             { text: "BOM", link: "/base/b-bom" },
           ],
@@ -113,12 +116,23 @@ module.exports = {
             { text: "1. ES6 简介", link: "/advance/es6/index" },
             { text: "2. let 和const", link: "/advance/es6/2" },
             { text: "3. 解构赋值", link: "/advance/es6/3" },
+            { text: "4. 字符串的扩展", link: "/advance/es6/4" },
+            { text: "5. 字符串的新增方法", link: "/advance/es6/5" },
             { text: "14. Set 和Map 数据结构", link: "/advance/es6/14" },
             { text: "15. Proxy", link: "/advance/es6/15" },
             { text: "16. Reflect", link: "/advance/es6/16" },
           ],
         },
       ],
+      "/uniapp/": [
+        {
+          text: "目录",
+          items: [
+            { text: "1. 简介", link: "/uniapp/index"},
+            { text: "2. 生命周期", link: "/uniapp/lifetime"},
+          ]
+        }
+      ]
     },
   },
 };
