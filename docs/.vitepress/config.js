@@ -78,7 +78,8 @@ module.exports = {
             { text: "JS - Promise", link: "/base/b-js_promise" },
             { text: "DOM", link: "/base/b-dom" },
             { text: "BOM", link: "/base/b-bom" },
-            { text: "网络请求", link: "/base/b-request"}
+            { text: "网络请求", link: "/base/b-request"},
+            { text: "在浏览器中存储数据", link: "/base/b-store"},
           ],
         },
         {
