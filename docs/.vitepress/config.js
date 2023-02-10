@@ -136,6 +136,17 @@ module.exports = {
           ],
         },
       ],
+      "/interview/": [
+        {
+          text: "目录",
+          items: [
+            {text: "1.简介", link: "/interview/index"},
+            {text: "2.HTML", link: "/interview/html"},
+            {text: "3.CSS", link: "/interview/css"},
+            {text: "4.JS", link: "/interview/js"},
+          ]
+        }
+      ]
     },
   },
 };
