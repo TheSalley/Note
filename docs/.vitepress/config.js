@@ -146,6 +146,20 @@ module.exports = {
             {text: "4.JS", link: "/interview/js"},
           ]
         }
+      ],
+      "/ts/": [
+        {
+          text: "目录",
+          items: [
+            {text: "1. 简介", link: "/ts/index"},
+            {text: "2. 类型声明", link: "/ts/type_declare"},
+            {text: "3. 类型推论", link: "/ts/type_inference"},
+            {text: "4. 联合类型", link: "/ts/type_union"},
+            {text: "5. 接口", link: "/ts/interface"},
+            {text: "6. 数组的类型", link: "/ts/type_array"},
+            {text: "7. 函数的类型", link: "/ts/type_fun"},
+          ]
+        }
       ]
     },
   },
