@@ -78,8 +78,8 @@ module.exports = {
             { text: "JS - Promise", link: "/base/b-js_promise" },
             { text: "DOM", link: "/base/b-dom" },
             { text: "BOM", link: "/base/b-bom" },
-            { text: "网络请求", link: "/base/b-request"},
-            { text: "在浏览器中存储数据", link: "/base/b-store"},
+            { text: "网络请求", link: "/base/b-request" },
+            { text: "在浏览器中存储数据", link: "/base/b-store" },
           ],
         },
         {
@@ -140,27 +140,43 @@ module.exports = {
         {
           text: "目录",
           items: [
-            {text: "1.简介", link: "/interview/index"},
-            {text: "2.HTML", link: "/interview/html"},
-            {text: "3.CSS", link: "/interview/css"},
-            {text: "4.JS", link: "/interview/js"},
-          ]
-        }
+            { text: "1.简介", link: "/interview/index" },
+            { text: "2.HTML", link: "/interview/html" },
+            { text: "3.CSS", link: "/interview/css" },
+            { text: "4.JS", link: "/interview/js" },
+          ],
+        },
       ],
       "/ts/": [
         {
-          text: "目录",
+          text: "基础",
           items: [
-            {text: "1. 简介", link: "/ts/index"},
-            {text: "2. 类型声明", link: "/ts/type_declare"},
-            {text: "3. 类型推论", link: "/ts/type_inference"},
-            {text: "4. 联合类型", link: "/ts/type_union"},
-            {text: "5. 接口", link: "/ts/interface"},
-            {text: "6. 数组的类型", link: "/ts/type_array"},
-            {text: "7. 函数的类型", link: "/ts/type_fun"},
-          ]
-        }
-      ]
+            { text: "1. 简介", link: "/ts/index" },
+            { text: "2. 类型声明", link: "/ts/type_declare" },
+            { text: "3. 类型推论", link: "/ts/type_inference" },
+            { text: "4. 联合类型", link: "/ts/type_union" },
+            { text: "5. 接口", link: "/ts/interface" },
+            { text: "6. 数组的类型", link: "/ts/type_array" },
+            { text: "7. 函数的类型", link: "/ts/type_fun" },
+            { text: "8. 类型断言", link: "/ts/type_assert" },
+            { text: "9. 声明文件", link: "/ts/file_declare" },
+            { text: "10. 内置对象", link: "/ts/obj_inner" },
+          ],
+        },
+        {
+          text: "进阶",
+          items: [
+            { text: "11. 类型别名", link: "/ts/type_alias" },
+            { text: "12. 字符串字面量类型", link: "/ts/type_string" },
+            { text: "13. 元组", link: "/ts/turple" },
+            { text: "14. 枚举", link: "/ts/enum" },
+            { text: "15. 类", link: "/ts/class" },
+            { text: "16. 类与接口", link: "/ts/class_interface" },
+            { text: "17. 泛型", link: "/ts/generics" },
+            { text: "18. 声明合并", link: "/ts/merge_declare" },
+          ],
+        },
+      ],
     },
   },
 };
