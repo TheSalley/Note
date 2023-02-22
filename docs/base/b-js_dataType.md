@@ -1,6 +1,6 @@
 # 数据类型
 
-+ 值类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
++ 原始类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`、`Symbol`、`BigInt`
 
 + 引用类型：`Object`（包含`Function`、`Array`）
 
@@ -10,9 +10,16 @@
 
 在`JavaScript` 中做数学运算是安全的。我们可以除以0，将非数字字符视为数字...
 
+```javascript
+console.log(1 / 0); // Infinity
+console.log("a" / 2); // NaN
+```
+
 ## BigInt
 
 `BigInt` 用来表示任意长度的整数。
+
+在`JavaScript` 中，`number` 类型无法安全地表示大于 (`2 ** 53 - 1`)（即`9007199254740991`），或小于 -(`2 ** 53 - 1`) 的整数。
 
 ```javascript
 // 尾部的 "n" 表示这是一个 BigInt 类型
@@ -39,7 +46,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
 `undefined` 的含义是未被赋值。
 
-如果一个变量已被声明，但未被赋值，那么它的值就是undefined。
+如果一个变量已被声明，但未被赋值，那么它的值就是`undefined` 。
 
 ## Symbol
 
