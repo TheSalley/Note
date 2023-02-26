@@ -127,6 +127,11 @@ module.exports = {
           ],
         },
       ],
+      "数据结构与算法": [
+        {
+          text: "4. 栈", link: "/advance/es6/4"
+        }
+      ],
       "/uniapp/": [
         {
           text: "目录",
