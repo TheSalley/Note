@@ -25,6 +25,8 @@ module.exports = {
           { text: "JavaScript", link: "/advance/index" },
           { text: "TypeScript", link: "/ts/index" },
           { text: "杂谈", link: "/advance/advance" },
+          { text: "ES6", link: "/advance/es6/" },
+          { text: "数据结构与算法", link: "/advance/dataStructure_algorithm/" },
         ],
       },
       {
@@ -127,10 +129,16 @@ module.exports = {
           ],
         },
       ],
-      "数据结构与算法": [
+      "/advance/dataStructure_algorithm": [
         {
-          text: "4. 栈", link: "/advance/es6/4"
-        }
+          text: "目录",
+          items: [
+            {
+              text: "4. 栈",
+              link: "/advance/dataStructure_algorithm/4",
+            },
+          ],
+        },
       ],
       "/uniapp/": [
         {
