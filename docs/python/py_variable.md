@@ -2,21 +2,24 @@
 
 ## 1、变量
 
+变量是可以赋给值的标签，而可以说变量指向特定的值。(有些像C 的指针)
+
 ```python
 message = "Hello Python!"
 print(message)  # Hello Python!
+
+message = 123
+print(message)  # 123
 ```
+
+:::tip
+`Python` 和`JavaScript` 一样，都是动态语言
+:::
 
 同时给多个变量赋值：
 
 ```python
 x, y, z = 0, 1, 2
-```
-
-## 2、常量
-
-```python
-MAX_CONNECTIONS = 5000
 ```
 
 > 命名规则：
@@ -25,30 +28,36 @@ MAX_CONNECTIONS = 5000
 
 + 不能用关键字和保留字。
 
-## 3、字符串
+### 常量
 
-支持单引号、双引号。
+```python
+MAX_CONNECTIONS = 5000
+```
+
+## 2、字符串
+
+使用单引号、双引号包裹。
 
 ```python
 'This is a string'
 "This is also a string"
 ```
 
-在字符串中使用变量
+在字符串中使用变量:
 
 ```python
-# f""
-first_name = "ada"
-last_name = "loveace"
+# f""、f''
+first_name = "alan"
+last_name = "turing"
 full_name = f"{first_name} {last_name}"
-print(f"Hello, {full_name.title()}")  # Hello, Ada Loveace
+print(f"Hello, {full_name.title()}")  # Hello, Alan Turing
 
-# "".format()
+# "".format()、''.format()
 full_name2 = "{}-{}".format(first_name, last_name)
-print("Hello, {}".format(full_name2))  # Hello, ada-loveace
+print("Hello, {}".format(full_name2))  # Hello, alan-turing
 ```
 
-## 4、数
+## 3、数
 
 整数和浮点数:
 
