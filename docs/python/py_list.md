@@ -24,11 +24,17 @@ last_fruit = fruits[-1]
 print(last_fruit)  # lemon
 ```
 
+:::danger
+访问的索引值超过列表长度时会报错.
+:::
+
 ## 3、修改、添加和删除元素
 
 + 修改列表元素
 
 ```python
+# 通过索引找到该元素并修改
+
 fruits = ['banana', 'orange', 'mango', 'lemon']
 fruits[0] = 'apple'
 print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
@@ -39,6 +45,8 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     + `append()`
 
     ```python
+    # 尾部追加
+
     fruits = ['banana', 'orange', 'mango', 'lemon']
     fruits.append('pear')
     print(fruits)  # ['banana', 'orange', 'mango', 'lemon', 'pear']
@@ -47,6 +55,8 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     + `insert()`
 
     ```python
+    # 任意位置添加
+
     fruits = ['banana', 'orange', 'mango', 'lemon']
     fruits.insert(2, 'strawberry')
     print(fruits)  # ['banana', 'orange', 'strawberry', 'mango', 'lemon']
@@ -57,6 +67,8 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     + `del`
 
     ```python
+    # 删除指定位置的元素
+
     fruits = ['banana', 'orange', 'mango', 'lemon']
     del fruits[0]
     print(fruits)  # ['orange', 'mango', 'lemon']
@@ -65,8 +77,12 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     + `pop()`
 
     ```python
+    # 返回删除的元素
+
     fruits = ['banana', 'orange', 'mango', 'lemon']
+    # 弹出最后一个
     fruits.pop()
+    # 弹出指定位置的元素
     fruits.pop(0)
     print(fruits)  # ['orange', 'mango']
     ```
@@ -74,6 +90,9 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     + `remove()`
 
     ```python
+    # 根据值来删除，只能删除出现的第一个
+    # 返回删除项
+
     fruits = ['banana', 'orange', 'mango', 'lemon']
     fruits.remove('banana')
     print(fruits)  # ['orange', 'mango', 'lemon']
@@ -83,7 +102,7 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
 
 > 排序
 
-+ 永久排序
++ `sort() 方法`永久排序（不可恢复）
 
     正向排序：
 
@@ -101,12 +120,11 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
     print(fruits)  # ['orange', 'mango', 'lemon', 'banana']
     ```
 
-+ 临时排序
++ `sorted() 函数`临时排序（不影响原列表）
 
     同样支持反向排序
 
     ```python
-    # 不影响原列表
     fruits = ['banana', 'orange', 'mango', 'lemon']
     fruits_new = sorted(fruits)
     print(fruits)  # ['banana', 'orange', 'mango', 'lemon']
@@ -117,7 +135,7 @@ print(fruits)  # ['apple', 'orange', 'mango', 'lemon']
 
 + 反转列表
 
-`reverse()`
+`reverse()`（永久性）
 
 ```python
 fruits = ['banana', 'orange', 'mango', 'lemon']
