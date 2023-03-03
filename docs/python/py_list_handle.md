@@ -3,9 +3,9 @@
 ## 1、遍历整个列表
 
 ```python
-magicians = ['ooo', 'kiva', 'faiz']
-for magician in magicians:
-    print(magician)
+riders = ['ooo', 'kiva', 'faiz']
+for rider in riders:
+    print(rider)
 
 # ooo
 # kiva
@@ -14,7 +14,7 @@ for magician in magicians:
 
 ## 2、创建数值列表
 
-`range()`
+- `range()`
 
 ```python
 numbers = list(range(1, 5))
@@ -27,6 +27,8 @@ even_numbers = list(range(2, 11, 2))
 print(even_numbers)
 
 # [2, 4, 6, 8, 10]
+
+# range() 若只指定一个参数，默认从0 开始
 ```
 
 ## 3、对数字列表执行简单的统计计算
@@ -49,26 +51,30 @@ print(squares)
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
-## 5、使用列表的一部分  
+## 5、使用列表的一部分
 
-+ 切片
+- 切片
 
-    ```python
-    fruits = ['banner', 'apple', 'pear', 'mango']
-    print(fruits[0:3])
-    print(fruits[:2])
-    print(fruits[2:])
-    print(fruits[-3:])
+  ```python
+  fruits = ['banner', 'apple', 'pear', 'mango']
+  print(fruits[0:3])
+  print(fruits[:2])
+  print(fruits[2:])
+  print(fruits[-3:])
 
-    # ['banner', 'apple', 'pear']
-    # ['banner', 'apple']
-    # ['pear', 'mango']
-    # ['apple', 'pear', 'mango']
-    ```
+  # ['banner', 'apple', 'pear']
+  # ['banner', 'apple']
+  # ['pear', 'mango']
+  # ['apple', 'pear', 'mango']
+  ```
+
+:::tip
+切片的第三个值是步长
+:::
 
 ## 6、复制列表
 
-创建整个列表的副本（使用[:]）
+创建整个列表的副本（使用`[:]`）(深拷贝)
 
 ```python
 my_foods = ['pizza', 'carrot cake']
