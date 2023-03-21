@@ -2,9 +2,11 @@
 
 ## 1、简介
 
+类是对现实的模拟。
+
 ## 2、创建和使用类
 
-> <span class="hightlight-text">创建`Dog` 类：</span>
+创建`Dog` 类：
 
 ```python
 class Dog:
@@ -27,7 +29,7 @@ class Dog:
 
 它是一个指向实例本身的引用，让实例能够访问类中的属性和方法。
 
-> <span class="hightlight-text">根据类创建实例</span>
+根据类创建实例：
 
 ```python
 class Dog:

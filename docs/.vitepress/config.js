@@ -27,6 +27,7 @@ module.exports = {
           { text: "杂谈", link: "/advance/advance" },
           { text: "ES6", link: "/advance/es6/" },
           { text: "数据结构与算法", link: "/advance/dataStructure_algorithm/" },
+          { text: "webpack", link: "/webpack/index" },
         ],
       },
       {
