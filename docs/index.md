@@ -46,8 +46,8 @@
 ## 🐬 SQL
 
 
-1. [数据库](./database/index.md)
-2. [sql 语句](./database/sql.md)
+1. [数据库](./database/index)
+2. [《MySQL必知必会》](./database/sql)
 
 ## 🐋 Docker
 
