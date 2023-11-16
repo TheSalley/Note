@@ -2,8 +2,8 @@ module.exports = {
   title: "Learn Note",
   lang: "en-US",
   description: "学习笔记",
-  base: "/build",
-  outDir: "../build",
+  base: "",
+  outDir: "/build",
   head: [
     [
       "link",
