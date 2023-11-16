@@ -3,7 +3,7 @@ module.exports = {
   lang: "en-US",
   description: "学习笔记",
   base: "",
-  outDir: "/build",
+  outDir: "../build",
   head: [
     [
       "link",
