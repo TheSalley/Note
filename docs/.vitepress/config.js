@@ -3,7 +3,7 @@ module.exports = {
   lang: "en-US",
   description: "学习笔记",
   base: "",
-  outDir: "../build",
+  outDir: "/build",
   head: [
     [
       "link",
@@ -199,6 +199,15 @@ module.exports = {
           ],
         },
       ],
+    },
+  },
+  markdown: {
+    container: {
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
+      infoLabel: "信息",
+      detailsLabel: "详细信息",
     },
   },
 };

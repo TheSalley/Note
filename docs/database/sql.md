@@ -503,3 +503,21 @@ SELECT s.stu_name, tb_teacher.tea_title ,tb_teacher.tea_name
 FROM tb_student AS s
 INNER JOIN tb_teacher ON s.col_id = tb_teacher.col_id;
 ```
+
+## 8、视图
+
+视图是虚拟的表，它只包含使用时动态查询出的结果。
+
+视图可以包含查询语句，也可以不包含查询语句。
+
+视图的作用：
+
+- 重用 SQL 语句；
+- 简化复杂的 SQL 操作；
+- 使用表的组成部分，而不是整个表；
+- 保护数据；可以给用户授予表的特定部分的访问权限，而不是整个表的访问权限；
+
+```sql
+CREATE VIEW v_student AS
+SELECT stu_id, stu_name, stu_sex,
+```
