@@ -90,7 +90,9 @@ PRIMARY KEY(id, book_number)
 )ENGINE=INNODB;
 ```
 
-注意: 在创建新表时，必须保证指定的表名不存在，否则会报错。
+::: warning
+在创建新表时，必须保证指定的表名不存在，否则会报错。
+:::
 
 `NULL` 值空字符串不同，`NULL` 值指明列中没有数据。
 

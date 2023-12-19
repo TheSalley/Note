@@ -44,6 +44,8 @@
 
 ## 🐍 Python
 
+1. [《实战Python网络爬虫》](./python/spider/0-实战Python网络爬虫)
+
 ## 🐬 SQL
 
 1. [《MySQL必知必会》](./database/sql)

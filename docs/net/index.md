@@ -1,5 +1,15 @@
 # 计算机网络
 
+## 网规
+
+上午一 75 道单选；2:30
+
+下午一 3 道问答题，每道有若干个问题；1:30
+
+下午二 论文；2:00
+
+![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3eae40e1b36b45d9bec791213710018d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=762&h=360&s=88739&e=png&b=fafafa)
+
 ## 1、简介
 
 计算机网络是通信技术与计算机技术紧密结合的产物。
