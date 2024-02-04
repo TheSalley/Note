@@ -1,5 +1,13 @@
 # Vue
 
+## 1、MVM 与MVVM 设计模式
+
+![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b242ce36b0d748b39cb4b367d10c65f6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1294&h=603&s=264710&e=png&b=e7e7e7)
+
+![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab0172f6df0c4abe9b9e978052ae9c71~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1346&h=239&s=100492&e=png&b=e6e6e6)
+
+![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b364d52d01914b9ba4f096d1a1b9e0ba~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1106&h=588&s=171777&e=png&b=e8e8e8)
+
 ## 1、生命周期
 
 | Vue2          |      Vue3       | 描述             |
