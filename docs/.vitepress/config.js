@@ -199,6 +199,13 @@ module.exports = {
         },
       ],
     },
+    lastUpdated: {
+      text: "更新于",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
   },
   markdown: {
     container: {

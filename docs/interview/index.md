@@ -50,3 +50,25 @@ window.scroll
 ## 2、浏览器实现剪切板
 
 clipboard-copy
+
+## 3、浏览器存储
+
+
+
+::: details `localStorage` 和 `sessionStorage` 得区别，以及跨页面之后是否能共享？
+`localStorage` 和 `sessionStorage` 都是`Web Storage API` 提供的两种客户端存储数据的方式。
+
+区别：
+
+1. 数据生命周期：
+
+    + `localStorage` 数据永久存储，除非用户清除浏览器缓存或通过`JavaScript` 代码清除；
+    + `sessionStorage` 数据仅会在当前会话期间存储，关闭浏览器或者当前标签页时，数据会被清除；
+2. 作用域：
+
+    + `localStorage` 数据在当前域名下的所有页面中都可以共享；
+    + `sessionStorage` 数据仅在当前页面下共享；
+3. 大小限制：
+
+    + `localStorage` 存储容量通常比`sessionStorage` 要大，一般为 5M；
+:::
