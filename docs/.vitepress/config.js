@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Learn Note",
+  title: "学习",
   lang: "en-US",
   description: "学习笔记",
   outDir: "../build",
@@ -23,7 +23,7 @@ module.exports = {
     nav: [
       {
         text: "前端基础",
-        link: "/base/b-html",
+        link: "/fe_base/index.md",
       },
       {
         text: "前端进阶",
@@ -52,26 +52,26 @@ module.exports = {
       {
         text: "NodeJs",
         items: [
-          { text: "Node", link: "/node/index" },
-          { text: "Koa", link: "/vue/VueRouter" },
-          { text: "Nest", link: "/nest/index" },
+          { text: "Node", link: "/node/index.md" },
+          { text: "Nest", link: "/nest/index.md" },
         ],
       },
       {
         text: "跨端跨平台",
-        items: [{ text: "uniapp", link: "/uniapp/index" }],
+        items: [{ text: "uniapp", link: "/uniapp/index.md" }],
+        items: [{ text: "uniCloud", link: "/uniapp/unicloud.md" }],
       },
       {
         text: "Python",
         items: [
-          { text: "Python基础", link: "../python/py_base.md" },
-          { text: "Flask", link: "../flask/index" },
-          { text: "Django", link: "../django/index" },
+          { text: "Python基础", link: "/python/index.md" },
+          { text: "Flask", link: "/flask/index.md" },
+          { text: "Django", link: "/django/index.md" },
         ],
       },
     ],
     sidebar: {
-      "/base/": [
+      "/fe_base/": [
         {
           text: "目录",
           collapsed: false,
@@ -103,6 +103,17 @@ module.exports = {
             { text: "JS 垃圾回收", link: "/base/b-js_recycle_rubbish" },
           ],
         },
+      ],
+      "/python/": [
+        {
+          text: "目录",
+          items: [
+            { text: "1. Python 简介", link: "/python/py_base" },
+            { text: "2. 变量和简单数据类型", link: "/python/py_variable" },
+            { text: "3. 列表", link: "/python/py_list" },
+            { text: "4. 操作列表", link: "/python/py_list_handle" },
+          ]
+        }
       ],
       "/python/learn": [
         {

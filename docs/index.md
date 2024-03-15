@@ -1,33 +1,6 @@
-<div align="center">
-<h1>TheShire's Notes Of Learn</h1>
+
+<h1 class="text-center">TheShire's Notes Of Learn</h1>
 <hr/>
-<img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bd898fb2e3a9406eacbb231097ca4903~tplv-k3u1fbpfcp-watermark.image?" style="width:100%;"/>
-</div>
-
-<style>
-.left {
-    text-align: left;
-    color: blue; /* 左边人物颜色 */
-}
-
-.right {
-    text-align: right;
-    color: green; /* 右边人物颜色 */
-}
-</style>
-
-<div class="dialogue">
-    <p class="left"><b>小明:</b> 你好，这里是左边人物说的话。</p>
-</div>
-
-<div class="dialogue">
-    <p class="right"><b>小红:</b> 你好，这里是右边人物说的话。</p>
-</div>
-
-<div class="dialogue">
-    <p class="left"><b>小明:</b> 很高兴和你交流。</p>
-</div>
-
 
 - [📕 目录](#📕-目录)
   - [🦋 前端](#🦋-前端)
@@ -37,7 +10,7 @@
     - [4. NodeJS](#_4、nodejs)
     - [5. Vue](#_5、vue)
     - [6. React](#_6、react)
-    - [7. 微信小程序](#_7、微信小程序)
+    - [7. Uniapp](#_7、Uniapp)
   - [🐍 Pyhton](#🐍-python)
     - [book]
   - [🐬 数据库](#🐬-sql)
@@ -53,9 +26,9 @@
 
 ## 🦋 前端
 
-### 1、HTML
+#### 1、HTML
 
-### 2、CSS
+#### 2、CSS
 
 ### 3、JavaScript
 
@@ -65,7 +38,7 @@
 
 ### 6、React
 
-### 7、微信小程序
+### 7、Uniapp
 
 ## 🐍 Python
 
