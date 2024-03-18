@@ -76,3 +76,50 @@ src
 ├── app.service.ts # 带有单个方法的基本服务
 └── main.ts # 应用程序入口文件
 ```
+
+前端与后端的通讯：
+
+1. url param `http://xxx.com/person/1`
+2. query `http://xxx.com/person?name=zhangsan&age=20`
+
+   非英文字符和一些特殊字符要经过编码
+
+   ```js
+   const query = "?name=" + encodeURIComponent("张三") + "&age=20";
+   // "?name=%E5%BC%A0%E4%B8%89&age=20"
+   ```
+
+   或者使用 query-string 库
+
+   ```js
+   const queryString = require("query-string");
+
+   queryString.stringify({
+     name: "张三",
+     age: 20,
+   });
+   // "?name=%E5%BC%A0%E4%B8%89&age=20"
+   ```
+
+3. form-urlencoded
+
+   用form 表单提交数据，它会把query 字符串放在body中，并指定content-type 为application/x-www-form-urlencoded
+
+   不适合传递大量数据，如文件
+4. form-data
+
+    用------- 加一串数字作为分隔符
+
+    content-type 为 multipart/form-data，然后指定 boundary
+
+    适合传输文件，也可传输多个文件
+
+    但因为有boundary ，请求体会增大
+5. json
+
+    content-type 为 application/json
+
+
+后端系统中，会有很多对象：
+
+IOC(Inverse of Control)
