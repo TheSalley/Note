@@ -1,18 +1,17 @@
 {
   "name": "note",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "学习笔记",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "TheShire",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.77.0",
     "vitepress": "^1.0.0-rc.25"
   }
 }
