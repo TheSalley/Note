@@ -6,9 +6,10 @@ export default {
   title: "学习",
   lang: "en-US",
   description: "学习笔记",
-  cacheDir: "../node_modules",
-  outDir: "../build",
   head,
+  cacheDir: "../node_modules",
+  outDir: "./build",
+  base: "./",
   themeConfig: {
     nav,
     sidebar,
