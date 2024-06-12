@@ -9,7 +9,7 @@ export default {
   head,
   cacheDir: "../node_modules",
   outDir: "./build",
-  base: "./",
+  base: "/",
   themeConfig: {
     nav,
     sidebar,
