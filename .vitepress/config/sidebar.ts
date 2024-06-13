@@ -1,37 +1,37 @@
 export const sidebar = {
-  // "/fe_base/": [
-  //   {
-  //     text: "目录",
-  //     collapsed: false,
-  //     items: [
-  //       { text: "HTML", link: "/base/b-html" },
-  //       { text: "CSS", link: "/base/b-css" },
-  //       { text: "JS - 基础知识", link: "/base/b-js" },
-  //       { text: "JS - 数据类型", link: "/base/b-js_dataType" },
-  //       { text: "JS - 对象", link: "/base/b-js_object" },
-  //       { text: "JS - 函数进阶", link: "/base/b-js_fun_advance" },
-  //       { text: "JS - 原型、继承", link: "/base/b-js_proto" },
-  //       { text: "JS - 类", link: "/base/b-js_class" },
-  //       { text: "JS - Promise", link: "/base/b-js_promise" },
-  //       { text: "DOM", link: "/base/b-dom" },
-  //       { text: "BOM", link: "/base/b-bom" },
-  //       { text: "网络请求", link: "/base/b-request" },
-  //       { text: "在浏览器中存储数据", link: "/base/b-store" },
-  //     ],
-  //   },
-  //   {
-  //     text: "扩展",
-  //     collapsed: false,
-  //     items: [
-  //       { text: "正则", link: "/base/b-reg" },
-  //       { text: "HTTP", link: "/base/b-http" },
-  //       { text: "Git", link: "/base/b-git" },
-  //       { text: "性能优化", link: "/base/b-performance" },
-  //       { text: "浏览器相关", link: "/base/b-browser" },
-  //       { text: "JS 垃圾回收", link: "/base/b-js_recycle_rubbish" },
-  //     ],
-  //   },
-  // ],
+  "/docs/fe/fe_base/": [
+    {
+      text: "目录",
+      collapsed: false,
+      items: [
+        { text: "HTML", link: "/docs/fe/fe_base/b-html" },
+        { text: "CSS", link: "/docs/fe/fe_base/2-css" },
+        { text: "JS - 基础知识", link: "/docs/fe/fe_base/b-js" },
+        { text: "JS - 数据类型", link: "/docs/fe/fe_base/b-js_dataType" },
+        { text: "JS - 对象", link: "/docs/fe/fe_base/b-js_object" },
+        { text: "JS - 函数进阶", link: "/docs/fe/fe_base/b-js_fun_advance" },
+        { text: "JS - 原型、继承", link: "/docs/fe/fe_base/b-js_proto" },
+        { text: "JS - 类", link: "/docs/fe/fe_base/b-js_class" },
+        { text: "JS - Promise", link: "/docs/fe/fe_base/b-js_promise" },
+        { text: "DOM", link: "/docs/fe/fe_base/b-dom" },
+        { text: "BOM", link: "/docs/fe/fe_base/b-bom" },
+        { text: "网络请求", link: "/docs/fe/fe_base/b-request" },
+        { text: "在浏览器中存储数据", link: "/docs/fe/fe_base/b-store" },
+      ],
+    },
+    {
+      text: "扩展",
+      collapsed: false,
+      items: [
+        { text: "正则", link: "/docs/fe/fe_base/b-reg" },
+        { text: "HTTP", link: "/docs/fe/fe_base/b-http" },
+        { text: "Git", link: "/docs/fe/fe_base/b-git" },
+        { text: "性能优化", link: "/docs/fe/fe_base/b-performance" },
+        { text: "浏览器相关", link: "/docs/fe/fe_base/b-browser" },
+        { text: "JS 垃圾回收", link: "/docs/fe/fe_base/b-js_recycle_rubbish" },
+      ],
+    },
+  ],
   // "/python/": [
   //   {
   //     text: "目录",

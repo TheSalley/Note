@@ -1,7 +1,7 @@
 export const nav = [
   {
     text: "前端基础",
-    link: "/docs/fe_base/index.md",
+    link: "/docs/fe/fe_base/index",
   },
   {
     text: "前端进阶",
