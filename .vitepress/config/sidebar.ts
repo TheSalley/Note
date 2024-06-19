@@ -4,7 +4,7 @@ export const sidebar = {
       text: "目录",
       collapsed: false,
       items: [
-        { text: "HTML", link: "/docs/fe/fe_base/b-html" },
+        { text: "HTML", link: "/docs/fe/fe_base/1-html" },
         { text: "CSS", link: "/docs/fe/fe_base/2-css" },
         { text: "JS - 基础知识", link: "/docs/fe/fe_base/b-js" },
         { text: "JS - 数据类型", link: "/docs/fe/fe_base/b-js_dataType" },
