@@ -1,7 +1,7 @@
 export const nav = [
   {
     text: "前端基础",
-    link: "/docs/fe_base/index.md",
+    link: "/docs/fe/fe_base/index",
   },
   {
     text: "前端进阶",
@@ -17,7 +17,7 @@ export const nav = [
   {
     text: "Vue",
     items: [
-      { text: "Vue 基础", link: "/vue/index" },
+      { text: "Vue 基础", link: "/docs/fe/vue/index" },
       { text: "VueRouter", link: "/vue/VueRouter" },
       { text: "Vuex", link: "/vue/vuex" },
       { text: "Vue3+Ts+setup", link: "/vue/3-ts" },

@@ -1,3 +1,15 @@
+1. 函数式编程
+
+什么意思？
+
+函数编程的特性(纯函数、柯里化、函数组合等)
+
+它的应用场景
+
+函数式编程库Lodash
+
+
+
 <!-- 
 <h1 class="text-center">TheShire's Notes Of Learn</h1>
 <hr/>

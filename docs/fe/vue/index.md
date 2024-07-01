@@ -1,6 +1,16 @@
 # Vue
 
-## 1、MVM 与MVVM 设计模式
+1. MVC 与MVVM 设计模式
+2. 选项式API 的编程风格和优势
+3. 声明式渲染及响应式数据实现原理
+4. 指令系统与事件方法及传参处理
+5. 计算属性和侦听器区别与原理
+6. 条件渲染与列表渲染及注意点
+7. class 样式与style 样式的3种形态
+8. 表单处理和双向数据绑定原理
+9. 生命周期钩子函数与原理分析
+
+## 1、MVC 与MVVM 设计模式
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b242ce36b0d748b39cb4b367d10c65f6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1294&h=603&s=264710&e=png&b=e7e7e7)
 
