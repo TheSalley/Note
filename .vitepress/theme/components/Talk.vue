@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col">
     <slot></slot>
-    <slot name="abc">**********</slot>
+    <div class="footer"></div>
   </div>
 </template>
+<script>
+</script>
