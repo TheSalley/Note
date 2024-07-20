@@ -12,11 +12,11 @@
 
 ## 1、MVC 与MVVM 设计模式
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b242ce36b0d748b39cb4b367d10c65f6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1294&h=603&s=264710&e=png&b=e7e7e7)
+<!-- ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b242ce36b0d748b39cb4b367d10c65f6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1294&h=603&s=264710&e=png&b=e7e7e7) -->
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab0172f6df0c4abe9b9e978052ae9c71~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1346&h=239&s=100492&e=png&b=e6e6e6)
+<!-- ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab0172f6df0c4abe9b9e978052ae9c71~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1346&h=239&s=100492&e=png&b=e6e6e6) -->
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b364d52d01914b9ba4f096d1a1b9e0ba~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1106&h=588&s=171777&e=png&b=e8e8e8)
+<!-- ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b364d52d01914b9ba4f096d1a1b9e0ba~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1106&h=588&s=171777&e=png&b=e8e8e8) -->
 
 ## 2、声明式编程和命令式编程
 
@@ -156,7 +156,7 @@
 
 每个组件实例都有相应的`Watcher`，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的`setter` 被调用时，会通知`Watcher` 重新计算，从而导致使它关联的组件的已更新。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10631e82411948759e96d3c408409a89~tplv-k3u1fbpfcp-watermark.image?)
+<!-- ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10631e82411948759e96d3c408409a89~tplv-k3u1fbpfcp-watermark.image?) -->
 
 ::: tip Vue 双向绑定数据原理
 采用**数据劫持** 结合**发布-订阅**模式，通过`Object.defineProperty` 来劫持各个属性的`getter/setter`，在数组变动时发布消息给订阅者，触发相应的监听回调。
@@ -174,10 +174,12 @@
 
 - 属性变更时，`Dep.notice` 通知并调自身的`update`，触发`Compile`中绑定的回调
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32c3c03d10b2469aab200a188d5d3153~tplv-k3u1fbpfcp-watermark.image?)
+<!-- ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32c3c03d10b2469aab200a188d5d3153~tplv-k3u1fbpfcp-watermark.image?) -->
 
 mixin
 
 插件
 
 不同构建版本的 Vue
+
+
